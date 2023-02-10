@@ -1,0 +1,6 @@
+framework module Pods_proverbsApp {
+  umbrella header "Pods-proverbsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
