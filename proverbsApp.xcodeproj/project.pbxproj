@@ -12,6 +12,7 @@
 		1C0656492996715000BA04FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0656482996715000BA04FC /* ViewController.swift */; };
 		1C06564E2996715100BA04FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C06564D2996715100BA04FC /* Assets.xcassets */; };
 		1C0656512996715100BA04FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C06564F2996715100BA04FC /* LaunchScreen.storyboard */; };
+		630BD010844935B920124D55 /* Pods_proverbsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDB5ED4F61569415EA75694 /* Pods_proverbsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1C06564D2996715100BA04FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C0656502996715100BA04FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C0656522996715100BA04FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0A54BEC50BA82C1F8B12EC /* Pods-proverbsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proverbsApp.release.xcconfig"; path = "Target Support Files/Pods-proverbsApp/Pods-proverbsApp.release.xcconfig"; sourceTree = "<group>"; };
+		4FDB5ED4F61569415EA75694 /* Pods_proverbsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proverbsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E9899A442B3D5B1F75BEFC /* Pods-proverbsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proverbsApp.debug.xcconfig"; path = "Target Support Files/Pods-proverbsApp/Pods-proverbsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630BD010844935B920124D55 /* Pods_proverbsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1C0656432996715000BA04FC /* proverbsApp */,
 				1C0656422996715000BA04FC /* Products */,
+				3B5F23B2ECDBA2EBE6017C82 /* Pods */,
+				B86EFD3141FDD136DB5C47B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = proverbsApp;
 			sourceTree = "<group>";
 		};
+		3B5F23B2ECDBA2EBE6017C82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91E9899A442B3D5B1F75BEFC /* Pods-proverbsApp.debug.xcconfig */,
+				4D0A54BEC50BA82C1F8B12EC /* Pods-proverbsApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B86EFD3141FDD136DB5C47B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FDB5ED4F61569415EA75694 /* Pods_proverbsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C0656552996715100BA04FC /* Build configuration list for PBXNativeTarget "proverbsApp" */;
 			buildPhases = (
+				1F565EB8E1B60252D714C3A3 /* [CP] Check Pods Manifest.lock */,
 				1C06563D2996715000BA04FC /* Sources */,
 				1C06563E2996715000BA04FC /* Frameworks */,
 				1C06563F2996715000BA04FC /* Resources */,
+				1CAAC5E8D1D6549DE97DCA32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CAAC5E8D1D6549DE97DCA32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proverbsApp/Pods-proverbsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-proverbsApp/Pods-proverbsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-proverbsApp/Pods-proverbsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F565EB8E1B60252D714C3A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-proverbsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C06563D2996715000BA04FC /* Sources */ = {
@@ -270,6 +339,7 @@
 		};
 		1C0656562996715100BA04FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E9899A442B3D5B1F75BEFC /* Pods-proverbsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		1C0656572996715100BA04FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0A54BEC50BA82C1F8B12EC /* Pods-proverbsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
